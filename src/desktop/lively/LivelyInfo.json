@@ -1,0 +1,14 @@
+{
+  "AppVersion": "1.0.0.0",
+  "Title": "Đếm ngày đến Tết",
+  "Thumbnail": "lively-thumb.png",
+  "Preview": "lively-thumb.png",
+  "Desc": "Đếm ngược đến Tết Nguyên Đán, hoa mai rơi, chạm để bắn pháo hoa.",
+  "Author": "tet-countdown",
+  "License": "",
+  "Contact": "",
+  "Type": 1,
+  "FileName": "index.html",
+  "Arguments": "",
+  "IsAbsolutePath": false
+}

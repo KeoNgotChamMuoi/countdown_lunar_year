@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7a0a0a">
+  <meta name="description" content="Đếm ngược đến Tết Nguyên Đán">
+  <title>Đếm ngày đến Tết</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preload" href="fonts/playfair-display-vietnamese-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+  <canvas class="fx" id="fx" aria-hidden="true"></canvas>
+
+  <main class="card">
+    <header class="badge" id="badge">Tết</header>
+
+    <section class="countdown" id="countdown">
+      <p class="label">Còn</p>
+      <button class="days" id="daysBtn" type="button" aria-label="Bắn pháo hoa">
+        <span id="days">--</span>
+      </button>
+      <p class="label">ngày nữa là Tết</p>
+
+      <div class="clock">
+        <div><b id="hours">--</b><small>giờ</small></div>
+        <div><b id="minutes">--</b><small>phút</small></div>
+        <div><b id="seconds">--</b><small>giây</small></div>
+      </div>
+    </section>
+
+    <section class="festive" id="festive" hidden>
+      <p class="greet">Chúc Mừng<br>Năm Mới</p>
+      <p class="label" id="festiveSub"></p>
+    </section>
+
+    <p class="date" id="date"></p>
+
+    <div class="progress" aria-label="Chặng đường trong năm">
+      <div class="bar"><i id="bar"></i></div>
+      <p id="progressText"></p>
+    </div>
+
+    <p class="wish" id="wish"></p>
+
+    <button class="lixi" id="lixiBtn" type="button">
+      <span class="lixi-env" aria-hidden="true"><span>Lộc</span></span>
+      Bóc lì xì
+    </button>
+    <p class="hint" id="hint">Chạm vào số ngày để bắn pháo hoa</p>
+  </main>
+
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetAmount">
+      <p class="sheet-eyebrow">Lì xì của cậu</p>
+      <p class="sheet-amount" id="sheetAmount"></p>
+      <p class="sheet-wish" id="sheetWish"></p>
+      <button class="sheet-close" id="sheetClose" type="button">Nhận lộc</button>
+    </div>
+  </div>
+
+  <script src="lunar.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

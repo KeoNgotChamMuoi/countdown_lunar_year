@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tet_red">#7A0A0A</color>
+    <color name="tet_gold">#F6C453</color>
+    <color name="tet_cream">#FFF6E5</color>
+
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/tet_red</item>
+        <item name="android:statusBarColor">@color/tet_red</item>
+        <item name="android:navigationBarColor">#3D0303</item>
+    </style>
+</resources>
